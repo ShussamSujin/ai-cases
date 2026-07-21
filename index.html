@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="서울특별시교육청 AI·디지털 활용 선도학교 134개교 사례 나눔 유목화 자료">
+<title>AI·디지털 활용 선도학교 사례 나눔 유목화</title>
+<style>
+@font-face {
+  font-family: 'Pretendard';
+  src: local('Pretendard'), local('Apple SD Gothic Neo'), local('Malgun Gothic');
+  font-display: swap;
+}
+
+:root {
+  --bg: #FAFAF8;
+  --surface: #FFFFFF;
+  --surface-alt: #F3F2EE;
+  --text: #1A1A1A;
+  --text-secondary: #5A5A56;
+  --text-tertiary: #8A8A84;
+  --border: #E2E1DC;
+  --accent: #2563EB;
+  --accent-light: #EFF6FF;
+  --cat1: #2563EB; --cat1-bg: #EFF6FF;
+  --cat2: #7C3AED; --cat2-bg: #F5F3FF;
+  --cat3: #059669; --cat3-bg: #ECFDF5;
+  --cat4: #D97706; --cat4-bg: #FFFBEB;
+  --cat5: #DC2626; --cat5-bg: #FEF2F2;
+  --cat6: #0891B2; --cat6-bg: #ECFEFF;
+  --cat7: #4F46E5; --cat7-bg: #EEF2FF;
+  --cat8: #BE185D; --cat8-bg: #FDF2F8;
+  --cat9: #65A30D; --cat9-bg: #F7FEE7;
+  --cat10: #EA580C; --cat10-bg: #FFF7ED;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-lg: 0 4px 12px rgba(0,0,0,0.08);
+  --radius: 10px;
+  --level-elem: #2563EB;
+  --level-mid: #059669;
+  --level-high: #7C3AED;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #18181B;
+    --surface: #27272A;
+    --surface-alt: #1F1F23;
+    --text: #FAFAFA;
+    --text-secondary: #A1A1AA;
+    --text-tertiary: #71717A;
+    --border: #3F3F46;
+    --accent: #60A5FA;
+    --accent-light: #1E293B;
+    --cat1: #60A5FA; --cat1-bg: #1E293B;
+    --cat2: #A78BFA; --cat2-bg: #2E1065;
+    --cat3: #34D399; --cat3-bg: #022C22;
+    --cat4: #FBBF24; --cat4-bg: #422006;
+    --cat5: #F87171; --cat5-bg: #450A0A;
+    --cat6: #22D3EE; --cat6-bg: #083344;
+    --cat7: #818CF8; --cat7-bg: #1E1B4B;
+    --cat8: #F472B6; --cat8-bg: #500724;
+    --cat9: #A3E635; --cat9-bg: #1A2E05;
+    --cat10: #FB923C; --cat10-bg: #431407;
+    --shadow: 0 1px 3px rgba(0,0,0,0.3);
+    --shadow-lg: 0 4px 12px rgba(0,0,0,0.4);
+    --level-elem: #60A5FA;
+    --level-mid: #34D399;
+    --level-high: #A78BFA;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #18181B;
+  --surface: #27272A;
+  --surface-alt: #1F1F23;
+  --text: #FAFAFA;
+  --text-secondary: #A1A1AA;
+  --text-tertiary: #71717A;
+  --border: #3F3F46;
+  --accent: #60A5FA;
+  --accent-light: #1E293B;
+  --cat1: #60A5FA; --cat1-bg: #1E293B;
+  --cat2: #A78BFA; --cat2-bg: #2E1065;
+  --cat3: #34D399; --cat3-bg: #022C22;
+  --cat4: #FBBF24; --cat4-bg: #422006;
+  --cat5: #F87171; --cat5-bg: #450A0A;
+  --cat6: #22D3EE; --cat6-bg: #083344;
+  --cat7: #818CF8; --cat7-bg: #1E1B4B;
+  --cat8: #F472B6; --cat8-bg: #500724;
+  --cat9: #A3E635; --cat9-bg: #1A2E05;
+  --cat10: #FB923C; --cat10-bg: #431407;
+  --shadow: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-lg: 0 4px 12px rgba(0,0,0,0.4);
+  --level-elem: #60A5FA;
+  --level-mid: #34D399;
+  --level-high: #A78BFA;
+}
+:root[data-theme="light"] {
+  --bg: #FAFAF8;
+  --surface: #FFFFFF;
+  --surface-alt: #F3F2EE;
+  --text: #1A1A1A;
+  --text-secondary: #5A5A56;
+  --text-tertiary: #8A8A84;
+  --border: #E2E1DC;
+  --accent: #2563EB;
+  --accent-light: #EFF6FF;
+  --cat1: #2563EB; --cat1-bg: #EFF6FF;
+  --cat2: #7C3AED; --cat2-bg: #F5F3FF;
+  --cat3: #059669; --cat3-bg: #ECFDF5;
+  --cat4: #D97706; --cat4-bg: #FFFBEB;
+  --cat5: #DC2626; --cat5-bg: #FEF2F2;
+  --cat6: #0891B2; --cat6-bg: #ECFEFF;
+  --cat7: #4F46E5; --cat7-bg: #EEF2FF;
+  --cat8: #BE185D; --cat8-bg: #FDF2F8;
+  --cat9: #65A30D; --cat9-bg: #F7FEE7;
+  --cat10: #EA580C; --cat10-bg: #FFF7ED;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-lg: 0 4px 12px rgba(0,0,0,0.08);
+  --level-elem: #2563EB;
+  --level-mid: #059669;
+  --level-high: #7C3AED;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header {
+  padding: 48px 0 32px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+  margin-bottom: 8px;
+}
+
+header .subtitle {
+  font-size: 15px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin: 24px 0 0;
+}
+
+.stat-item { text-align: center; }
+
+.stat-num {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  letter-spacing: 0.05em;
+}
+
+/* TAB NAV */
+.tab-nav {
+  display: flex;
+  gap: 0;
+  border-bottom: 2px solid var(--border);
+  margin: 28px 0 0;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  transition: all 0.15s;
+}
+
+.tab-btn:hover { color: var(--text); }
+
+.tab-btn.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* DASHBOARD */
+.dashboard {
+  padding: 28px 0 32px;
+}
+
+.dash-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.dash-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+
+.dash-card.full { grid-column: 1 / -1; }
+
+.dash-card h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dash-card h3 span { font-size: 18px; }
+
+.bar-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.bar-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  width: 130px;
+  flex-shrink: 0;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bar-track {
+  flex: 1;
+  height: 20px;
+  background: var(--surface-alt);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.6s ease;
+  min-width: 2px;
+}
+
+.bar-value {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  width: 28px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.donut-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.donut-container {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.donut-legend {
+  flex: 1;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.legend-count {
+  margin-left: auto;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--text);
+}
+
+.insight-box {
+  background: var(--accent-light);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-top: 12px;
+}
+
+.insight-box p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.insight-box strong { color: var(--text); }
+
+/* FILTER */
+.filter-section {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 100;
+  border-bottom: 1px solid var(--border);
+}
+
+.filter-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  letter-spacing: 0.06em;
+  margin-right: 4px;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+.filter-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+.filter-btn[data-level="초등"].active { background: var(--level-elem); border-color: var(--level-elem); }
+.filter-btn[data-level="중등"].active { background: var(--level-mid); border-color: var(--level-mid); }
+.filter-btn[data-level="고등"].active { background: var(--level-high); border-color: var(--level-high); }
+
+.search-input {
+  flex: 1;
+  min-width: 180px;
+  padding: 7px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+}
+
+.search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-light); }
+.search-input::placeholder { color: var(--text-tertiary); }
+
+/* CATEGORIES */
+.categories { padding: 28px 0 48px; }
+.category { margin-bottom: 36px; }
+
+.cat-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cat-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.cat-title { font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
+
+.cat-count {
+  font-size: 13px;
+  color: var(--text-tertiary);
+  margin-left: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.cat-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+  padding-left: 52px;
+}
+
+.cat-toggle {
+  margin-left: auto;
+  font-size: 18px;
+  color: var(--text-tertiary);
+  transition: transform 0.2s;
+}
+
+.cat-toggle.collapsed { transform: rotate(-90deg); }
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 12px;
+  padding-left: 52px;
+}
+
+.case-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  transition: box-shadow 0.15s, border-color 0.15s;
+  cursor: default;
+}
+
+.case-card:hover { box-shadow: var(--shadow-lg); border-color: var(--accent); }
+
+.case-card .card-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.level-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.level-badge.elem { background: var(--cat1-bg); color: var(--level-elem); }
+.level-badge.mid { background: var(--cat3-bg); color: var(--level-mid); }
+.level-badge.high { background: var(--cat2-bg); color: var(--level-high); }
+
+.card-school { font-size: 13px; font-weight: 600; color: var(--text); }
+
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+.card-summary {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-summary.expanded { -webkit-line-clamp: unset; }
+
+.card-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.tool-tag {
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: var(--surface-alt);
+  color: var(--text-secondary);
+}
+
+.card-subject {
+  font-size: 11px;
+  color: var(--text-tertiary);
+  margin-top: 8px;
+}
+
+.card-expand {
+  font-size: 11px;
+  color: var(--accent);
+  cursor: pointer;
+  margin-top: 4px;
+  border: none;
+  background: none;
+  font-family: inherit;
+  padding: 0;
+}
+
+.hidden { display: none !important; }
+
+footer {
+  padding: 32px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 640px) {
+  header h1 { font-size: 22px; }
+  .stats-bar { gap: 20px; }
+  .stat-num { font-size: 24px; }
+  .dash-grid { grid-template-columns: 1fr; }
+  .case-grid { grid-template-columns: 1fr; padding-left: 0; }
+  .cat-desc { padding-left: 0; }
+  .filter-row { gap: 6px; }
+  .donut-row { flex-direction: column; }
+  .tab-btn { padding: 10px 14px; font-size: 13px; }
+  .bar-label { width: 90px; font-size: 11px; }
+}
+</style>
+
+<header class="container">
+  <h1>AI·디지털 활용 선도학교 사례 나눔 유목화</h1>
+  <div class="subtitle">서울특별시교육청 AI·디지털 활용 선도학교 134개교 실천 사례를 10개 유목으로 분류하였습니다.</div>
+  <div class="stats-bar">
+    <div class="stat-item"><div class="stat-num">134</div><div class="stat-label">참여 학교</div></div>
+    <div class="stat-item"><div class="stat-num">10</div><div class="stat-label">유목 분류</div></div>
+    <div class="stat-item"><div class="stat-num" id="readable-count">0</div><div class="stat-label">내용 확인</div></div>
+    <div class="stat-item"><div class="stat-num" id="tool-count">0</div><div class="stat-label">활용 도구</div></div>
+  </div>
+  <nav class="tab-nav">
+    <button class="tab-btn active" data-tab="dashboard">분석 대시보드</button>
+    <button class="tab-btn" data-tab="cases">사례 목록</button>
+  </nav>
+</header>
+
+<div class="tab-panel active" id="panel-dashboard">
+  <div class="dashboard container" id="dashboardContainer"></div>
+</div>
+
+<div class="tab-panel" id="panel-cases">
+  <div class="filter-section">
+    <div class="container">
+      <div class="filter-row">
+        <span class="filter-label">학교급</span>
+        <button class="filter-btn active" data-level="all">전체</button>
+        <button class="filter-btn" data-level="초등">초등</button>
+        <button class="filter-btn" data-level="중등">중등</button>
+        <button class="filter-btn" data-level="고등">고등</button>
+        <input type="text" class="search-input" placeholder="학교명, 도구, 키워드 검색..." id="searchInput">
+      </div>
+    </div>
+  </div>
+  <div class="categories container" id="categoriesContainer"></div>
+</div>
+
+<footer class="container">
+  2026 AI·디지털 활용 선도학교 사례 나눔 유목화 자료 &middot; 서울특별시교육청
+</footer>
+
+<script>
+const CATEGORIES = [
+  {id:'courseware',icon:'📊',title:'AI 코스웨어 기반 맞춤형 학습',color:1,desc:'스쿨플랫, 매쓰홀릭, 풀리수학, 러니, 원아워, 클래스팅AI 등 AI 코스웨어의 진단·추천·대시보드 데이터를 활용해 학생별 맞춤 학습 경로를 제공하고 과정중심평가와 연계합니다.'},
+  {id:'genai',title:'생성형 AI 활용 교과 수업',icon:'🤖',color:2,desc:'ChatGPT, Claude, Gemini 등 생성형 AI를 교과 수업의 튜터·탐구 도구·비판적 검토 대상으로 활용하여 학생의 사고력과 자기주도 학습을 촉진합니다.'},
+  {id:'vibecoding',title:'바이브코딩 / 교사 개발 AI 도구',icon:'🛠️',color:3,desc:'교사가 생성형 AI(바이브코딩)로 수업·평가·학급관리용 웹앱을 직접 제작하거나, 학생이 노코드로 앱·시뮬레이션·게임을 만드는 새로운 흐름입니다.'},
+  {id:'feedback',title:'AI 평가·피드백 혁신',icon:'✏️',color:4,desc:'Clipo, Brisk Teaching, 채움AI, Snorkl 등으로 서·논술형 초벌채점, 글쓰기 피드백, 말하기 평가를 자동화하고 교사는 최종 판단과 심층 피드백에 집중합니다.'},
+  {id:'sel',title:'데이터 기반 학급운영·상담',icon:'💚',color:5,desc:'심스페이스 마음일기, 클래시파이 교우관계 분석, "우리반" 관계지도 등으로 학생의 정서·또래관계를 데이터로 파악하고 맞춤형 상담·생활지도에 연계합니다.'},
+  {id:'literacy',title:'디지털 리터러시·AI 윤리 교육',icon:'🛡️',color:6,desc:'AI 할루시네이션 검증, 가짜뉴스 판별, 딥페이크 예방, AI 윤리 모의재판, 디지털 시민 캠페인 등 AI 시대 비판적 사고와 책임 있는 사용을 가르칩니다.'},
+  {id:'automation',title:'학교 업무 자동화·경감',icon:'⚡',color:7,desc:'AI로 가정통신문·공문 초안 생성, 시간표 자동 편성, 생기부 도우미, 온라인 교무실 구축 등 교사의 반복 업무를 줄여 수업과 학생 지도에 시간을 돌려줍니다.'},
+  {id:'project',title:'프로젝트·융합 수업',icon:'🔬',color:8,desc:'교과 간 융합, STEAM, 생태전환, 아두이노·로봇, AI 자격(AICE) 연계 등 실생활 문제를 AI·디지털 도구로 해결하는 프로젝트 기반 학습입니다.'},
+  {id:'school',title:'학교 단위 확산·교원학습공동체',icon:'🏫',color:9,desc:'전 학년·전 교과에 AI·에듀테크를 확산하고, 교원학습공동체·수업 나눔 주간·팝업 연수 등 체계적 교원 역량 강화 모델을 구축한 학교 사례입니다.'},
+  {id:'inclusive',title:'특수교육·포용 교육',icon:'🌈',color:10,desc:'특수학급 맞춤 앱 개발, 토도한글·수학 개별화 학습, 다문화 학생 동시통역 지원 등 모든 학생이 소외 없이 학습할 수 있는 포용적 디지털 교육입니다.'}
+];
+
+const CASES = [
+  // Cat 1: AI 코스웨어 기반 맞춤형 학습
+  {cat:'courseware',school:'대원국제중학교',level:'중등',title:'스쿨플랫 AI 코스웨어 수학 맞춤 학습과 "컴맹 탈출" 프로그램',summary:'수학과에서 AI 코스웨어 스쿨플랫과 디벗으로 학기별 정밀 진단평가를 실시하고 LMS 데이터 분석에 기반해 수준별 맞춤 문제를 제공했다. 디지털 기기가 미숙한 학생을 위한 "컴맹 탈출" 프로그램으로 디지털 격차를 사전에 완화했다.',tools:['스쿨플랫','Canva','디벗'],subject:'수학'},
+  {cat:'courseware',school:'서울송천초등학교',level:'초등',title:'스쿨플랫·리딩오션스쿨 AI 코스웨어 맞춤형 수업',summary:'수학은 스쿨플랫, 독서는 리딩오션스쿨 AI 코스웨어를 도입해 학생 수준별 맞춤형 학습 활동을 운영하고, 패들렛 샌드박스로 모둠 협력 학습을 진행했다.',tools:['스쿨플랫','리딩오션스쿨','패들렛'],subject:'수학'},
+  {cat:'courseware',school:'서울구남초등학교',level:'초등',title:'AI 에듀테크 기반 수학 수업 루틴과 SEL-수학 융합',summary:'CRA 개념지도와 수학 코스웨어로 맞춤형 학습을 제공하고, 똑똑수학탐험대 게이미피케이션 복습과 심스페이스 감정사전 융합으로 수학+사회정서교육을 실현했다.',tools:['똑똑수학탐험대','심스페이스','알지오매스키즈'],subject:'수학'},
+  {cat:'courseware',school:'서울등마초등학교',level:'초등',title:'풀리수학 데이터 기반 과정중심평가와 심스페이스 마음 피드백',summary:'풀리수학의 학생별 학습 데이터로 막히는 단원을 파악해 평가가 곧 다음 수업 설계로 이어지는 과정중심평가를 실천했다.',tools:['풀리수학','아트봉봉','심스페이스'],subject:'수학'},
+  {cat:'courseware',school:'서울삼전초등학교',level:'초등',title:'매쓰홀릭 수학 완전학습과 심스페이스 AI 감정 코칭',summary:'매쓰홀릭 수학 학습 플로우를 구축해 AI 데이터로 실시간 진단·맞춤 피드백을 제공하고, 심스페이스로 학생 감정을 분석해 Wee 심리검사와 연계했다.',tools:['매쓰홀릭','심스페이스','키위티'],subject:'수학'},
+  {cat:'courseware',school:'서울청량초등학교',level:'초등',title:'매쓰홀릭 전교생 수학 맞춤학습과 구글사이트 에듀테크 허브',summary:'1~6학년 670명에게 매쓰홀릭을 제공해 학교와 가정에서 이어지는 수학 맞춤 학습과 데이터 기반 피드백을 운영했다.',tools:['매쓰홀릭','패들렛','구글사이트'],subject:'수학'},
+  {cat:'courseware',school:'서울학동초등학교',level:'초등',title:'AI 아크수학 데이터 기반 수학 맞춤학습과 젭퀴즈 협력 복습',summary:'AI 아크수학 실시간 평가 데이터를 분석해 보충·심화 학습을 제공하고, 느린 학습자에게 즉각적 오프라인 보충지도를 실시했다.',tools:['AI 아크수학','젭퀴즈'],subject:'수학'},
+  {cat:'courseware',school:'서울안천초등학교',level:'초등',title:'리드포스쿨 AI 문해력 학습과 디지털 시민성 교육',summary:'AI 문해력 코스웨어 리드포스쿨로 1:1 맞춤형 과제를 수행하게 하여 전 학생의 문해력 단계 향상을 확인했다.',tools:['리드포스쿨','캔바','패들렛'],subject:'국어'},
+  {cat:'courseware',school:'등원중학교',level:'중등',title:'AI 코스웨어(러니·원아워) 개별화 학습과 피지컬 컴퓨팅 융합',summary:'러니와 원아워로 수준별 개별화 학습·오답 보완 체계를 구축하고, 아두이노 피지컬 컴퓨팅과 결합한 스마트 건축 프로젝트를 운영했다.',tools:['러니','원아워','아두이노'],subject:'영어, 수학'},
+  {cat:'courseware',school:'장충고등학교',level:'고등',title:'AI 코스웨어 원아워 기반 영어 개별화 수업과 매월 교원 연수',summary:'AI 코스웨어 원아워를 중심으로 학생이 선택하는 개별화 수업을 운영하고, 전체 교사 절반이 참여하는 매월 연수로 확산했다.',tools:['원아워','클래스카드','클리포'],subject:'영어'},
+  {cat:'courseware',school:'오륜중학교',level:'중등',title:'AI 개별 맞춤형 성장 사다리 — 기초학력 코스웨어 수업',summary:'국어 러니, 수학 체리팟, 영어 클래스카드 AI 코스웨어로 수준별 자료를 제공하는 "성장 사다리" 수업을 운영 중이다.',tools:['러니','체리팟','클래스카드','브리스크 티칭'],subject:'국어, 수학, 영어'},
+  {cat:'courseware',school:'서울영본초등학교',level:'초등',title:'CORE-R 프로그램: 데이터 성찰 기반 초개별화 프로젝트 학습',summary:'학생이 수학 아레나의 CPM 데이터로 자신의 약점을 진단하고 다음 학습을 스스로 선택하면 교사가 승인·조정하는 학습자 주도 구조를 만들었다.',tools:['수학 아레나','바이브코딩','KOSIS'],subject:'수학'},
+  {cat:'courseware',school:'서울한강초등학교',level:'초등',title:'기후행동 콘텐츠 제작 프로젝트와 CORE-IDEA 수학 프로젝트',summary:'클래스팅AI로 아침시간 문제풀이와 AI튜터 추천 개별 피드백을 운영하고, 5학년 수학 3개 단원을 CORE-IDEA 프로젝트로 재구성했다.',tools:['클래스팅AI','포커스팡','패들렛'],subject:'수학'},
+  {cat:'courseware',school:'서울윤중초등학교',level:'초등',title:'AI 코스웨어 기반 수학 맞춤학습과 피지컬 컴퓨팅·머신러닝 융합',summary:'수학에서 AI 대시보드 활용 주간 피드백을 제공하고, 로봇·코딩으로 수학 개념을 구현하는 융합 프로젝트를 운영했다.',tools:['AI 코스웨어','피지컬 컴퓨팅 로봇'],subject:'수학'},
+  {cat:'courseware',school:'서울등현초등학교',level:'초등',title:'AI 코스웨어 기반 개별 맞춤 학습과 에듀테크 협업 수업',summary:'AI 코스웨어를 도입해 수학·문해력 영역에서 학생별 개별 맞춤형 학습을 실천했다.',tools:['AI 코스웨어','캔바','아트봉봉','패들렛'],subject:'수학'},
+  {cat:'courseware',school:'서울대곡초등학교',level:'초등',title:'AI·디지털 수업 모형 개발과 데이터 기반 정서·관계 지원',summary:'매쓰홀릭으로 진단·형성평가를 자동화하고, 심스페이스·우리반으로 학생 정서와 학급 관계를 추적했다.',tools:['매쓰홀릭','심스페이스','우리반'],subject:'수학'},
+  {cat:'courseware',school:'서울원명초등학교',level:'초등',title:'학습자 데이터 기반 맞춤형 교육과정과 에듀테크 지원 업무경감',summary:'띵커벨로 학생 실태를 조사하고 AI 분석 보고서를 바탕으로 맞춤형 교육과정을 재구성했다.',tools:['띵커벨','똑똑수학탐험대','북크리에이터'],subject:'수학, 과학'},
+  {cat:'courseware',school:'서울원광초등학교',level:'초등',title:'AI 코스웨어 맞춤학습과 디지털 시민성 독서 융합 리터러시 교육',summary:'수학 코스웨어의 오답 쌍둥이 문제와 AI 글쓰기 피드백, MS 리딩 프로그레스 읽기 학습을 결합했다.',tools:['매쓰홀릭','Gemini Gems','MS 리딩 프로그레스'],subject:'수학, 영어, 국어'},
+  {cat:'courseware',school:'신천중학교',level:'중등',title:'풀리 수학 맞춤학습과 바이브 코딩 투자 시뮬레이션 웹앱',summary:'풀리로 오답·수준별 추가 문제를 제공하고, 바이브 코딩으로 만든 투자 시뮬레이션 웹앱으로 경제교육을 진행했다.',tools:['풀리','엠플리파이 클래스룸','바이브 코딩'],subject:'수학, 사회'},
+  {cat:'courseware',school:'동신중학교',level:'중등',title:'AI 코스웨어 기반 맞춤형 학습과 글로벌 이슈 융합 프로젝트',summary:'수학·영어 진단·형성평가 데이터로 월 단위 학습 로드맵을 제공하고, 글로벌 이슈 기반 4개 교과 융합 프로젝트를 운영했다.',tools:['AI 코스웨어','AI 작곡·이미지 도구'],subject:'수학, 영어'},
+  {cat:'courseware',school:'서울안평초등학교',level:'초등',title:'아이쌤GPT·띵커벨 지원과 AI 리터러시 진단 기반 선도학교 운영',summary:'전 교원에게 아이쌤GPT와 띵커벨을 지원하고, 5학년 AI·디지털 리터러시 진단검사를 실시해 맞춤형 피드백의 기초자료로 활용했다.',tools:['아이쌤GPT','띵커벨','마인크래프트'],subject:'학교 전반'},
+  {cat:'courseware',school:'서울숭덕초등학교',level:'초등',title:'AS-IS/TO-BE 진단 기반 수업 설계와 마음일기 감정 데이터 활용',summary:'AI 코스웨어로 학습자 유형별 맞춤 전략을 안내하고, 마음일기 감정 데이터로 학생 이해도를 높였다.',tools:['수학 AI 코스웨어','생성형 AI'],subject:'수학'},
+  {cat:'courseware',school:'양강중학교',level:'중등',title:'클래스팅·띵커벨 보드를 활용한 역사·국어 수업 상호작용',summary:'역사 수행평가에서 클래스팅으로 AI와 토론하고, 국어에서 띵커벨 보드에 정서 글을 쓰며 상호작용을 실천했다.',tools:['클래스팅','띵커벨 보드','디벗'],subject:'역사, 국어'},
+
+  // Cat 2: 생성형 AI 활용 교과 수업
+  {cat:'genai',school:'서울녹번초등학교',level:'초등',title:'AI Bloom: 생성형 AI 피드백 기반 과학 보고서 개선',summary:'6학년 과학에서 생성형 AI로 탐구 보고서를 점검받고, AI 피드백의 타당성을 학생 스스로 검토하며 보고서를 개선하는 과정 중심 수업을 운영했다.',tools:['Gemini','ChatGPT','Claude','패들렛'],subject:'과학'},
+  {cat:'genai',school:'성신여자고등학교',level:'고등',title:'Redmenta 적응형 워크시트 기반 미디어 분석 영어 글쓰기',summary:'Redmenta를 활용해 AI 생성 미디어에 대한 포럼 글을 분석하고 정보 윤리를 지켜 댓글을 작성하는 과정 중심 수행평가를 운영했다.',tools:['Redmenta','생성형 AI'],subject:'영어'},
+  {cat:'genai',school:'연희중학교',level:'중등',title:'제미나이 튜터와 함께하는 중국어 여행 대화문 개인화 수업',summary:'제미나이를 튜터 삼아 자기 수준에 맞는 여행 대화문을 생성하고, 멘티미터·패들렛으로 결과물을 공유·보완하는 수업을 운영했다.',tools:['Gemini','멘티미터','패들렛'],subject:'중국어'},
+  {cat:'genai',school:'서울거원초등학교',level:'초등',title:'사고를 촉진하는 AI 맞춤형 챗봇 수업과 AI 윤리 17차시',summary:'Mizou, Gemini Gems로 "답변만 하지 말고 되물어 학생이 스스로 판단하게" 챗봇을 만들어 탐구 촉진 수업을 운영했다.',tools:['Mizou','Gemini Gems','Brisk Teaching'],subject:'정보, 사회'},
+  {cat:'genai',school:'이수중학교',level:'중등',title:'AI 질문 챗봇과 함께하는 질문 중심 프로젝트 수업',summary:'AI 질문 챗봇과 대화하며 스스로 질문을 생성·구체화하고 탐구 방향을 설정하는 질문 기반 프로젝트 수업을 운영했다.',tools:['AI 질문 챗봇'],subject:'기술·가정, 과학'},
+  {cat:'genai',school:'신도고등학교',level:'고등',title:'분자 모형 앱으로 배우는 규산염 광물과 AI 할루시네이션 검증 수업',summary:'분자 구조 앱으로 규산염 사면체를 만들고, AI의 평가를 학생이 직접 검증하며 할루시네이션을 이해하는 수업을 운영했다.',tools:['분자모형 앱','클로드','제미나이'],subject:'지구과학'},
+  {cat:'genai',school:'서울가동초등학교',level:'초등',title:'AI 비판적 활용 중심의 탐구-제작-공유 순환 수업',summary:'학생 요약문과 AI 요약을 비교해 AI가 놓친 맥락을 찾아 수정하는 등 AI를 비판적으로 활용하는 수업을 설계했다.',tools:['생성형 AI','투닝','와우아이디어스','Canva'],subject:'국어, 사회, 과학'},
+  {cat:'genai',school:'대진고등학교',level:'고등',title:'Elice AI 코스웨어와 생성형 AI 활용 정보·수학·미술 수업',summary:'정보에서 Elice AI로 맞춤형 학습 경로를, 수학에서 AI 프롬프트로 초월수를 판별·시각화하는 수업을 운영했다.',tools:['Elice AI','생성형 AI','키네마스터'],subject:'정보, 수학'},
+  {cat:'genai',school:'서울신계초등학교',level:'초등',title:'학습자 주도 통일 프로젝트와 데이터 기반 맞춤 교육',summary:'캔바·젭 퀴즈를 융합한 체험 부스를 학생이 직접 기획·운영하고, 빅카인즈 뉴스 분석과 투닝 카드뉴스를 결합한 환경 프로젝트를 운영했다.',tools:['캔바','ZEP','토도한글','빅카인즈'],subject:'국어, 도덕'},
+  {cat:'genai',school:'서울양남초등학교',level:'초등',title:'생성형 AI 교차 검증 탐구 수업과 특수학생 맞춤 토도 학습',summary:'AI 추천에 의존하지 않고 실시간 데이터를 교차 검증하는 비판적 사고 수업을 운영하고, 특수학급에 토도 개별화 학습을 제공했다.',tools:['생성형 AI','토도한글·수학·영어','클래스팅AI'],subject:'실과'},
+  {cat:'genai',school:'자양중학교',level:'중등',title:'캔바 AI 바이브코딩 입자 시뮬레이션과 환경 융합 수업',summary:'캔바 AI 바이브코딩으로 고체·액체·기체 입자 모형 시뮬레이션을 직접 제작·발표하며 오개념을 해소했다.',tools:['캔바 AI','클리포','Tooning AI','MBL 센서'],subject:'과학'},
+  {cat:'genai',school:'휘경여자중학교',level:'중등',title:'AI 코스웨어 진단-학습-창작 연계 하이브리드 프로젝트',summary:'AI 코스웨어로 문법 수준을 진단한 뒤, 대시보드 데이터에 따라 수준별 처방형 수업을 운영했다.',tools:['Padlet','픽스톤','Canva','AI 코스웨어'],subject:'영어'},
+  {cat:'genai',school:'서울미양초등학교',level:'초등',title:'CLE 모델 기반 AI·디지털 활용 수업 설계와 배움-삶 연계',summary:'CLE 모델 기반으로 수업을 설계하고 마을 문제 해결 프로젝트로 배움을 가정·지역사회로 확장했다.',tools:['토도한글','패들렛','클래스카드','젭퀴즈'],subject:'전 교과'},
+  {cat:'genai',school:'서울명원초등학교',level:'초등',title:'학습 데이터 시각화와 AI 윤리 토론 수업',summary:'구글 클래스룸·센스쿨 등으로 학생 데이터를 AI로 분류·시각화하고, AI와 함께 토론을 진행하는 수업을 운영했다.',tools:['구글 클래스룸','센스쿨','생성형 AI'],subject:'도덕'},
+  {cat:'genai',school:'상원중학교',level:'중등',title:'AI 결과물 제작·AI와 토론 프로젝트와 노트북LM 업무 효율화',summary:'학생이 AI 프롬프트로 헌혈 포스터·문화재 굿즈를 제작하고, AI와 찬반 토론으로 사고를 확장했다.',tools:['제미나이','뤼튼','투닝','노트북LM','왓퀴즈'],subject:'국어, 역사'},
+  {cat:'genai',school:'서울대림초등학교',level:'초등',title:'클래스카드·플랭스쿨·블루킷과 생성형 AI를 연계한 맞춤형 학습',summary:'클래스카드로 기본 학습을 다지고, 블루킷 개별 결과 보고서 기반 맞춤형 학습지 자동 생성 프로그램을 AI로 직접 만들었다.',tools:['클래스카드','플랭스쿨','블루킷','클로드'],subject:'국어, 영어'},
+  {cat:'genai',school:'서울신목초등학교',level:'초등',title:'캔바 단계적 심화 활용과 단원 연계형 AI 탐구평가',summary:'과학 단원을 캔바 디지털 탐구보고서와 AI 챗봇 실험 설계 검토로 이어지는 평가 흐름으로 재설계했다.',tools:['캔바','AI 챗봇','똑똑수학탐험대','구글 클래스룸'],subject:'과학, 수학'},
+
+  // Cat 3: 바이브코딩 / 교사 개발 AI 도구
+  {cat:'vibecoding',school:'서울수색초등학교',level:'초등',title:'바이브코딩으로 학급 맞춤 교육용 웹앱 개발·활용',summary:'교사들이 바이브코딩으로 학급·학생 특성에 맞춘 교육용 웹앱을 직접 개발해 수업에 활용하고, 학년별 협의로 개선·공유했다.',tools:['바이브코딩','AI 챗봇','자체 개발 웹앱'],subject:'전 교과'},
+  {cat:'vibecoding',school:'서울묘곡초등학교',level:'초등',title:'자체 개발 생성형 AI 영어 회화 플랫폼 기반 말하기 수업',summary:'학교가 자체 개발한 AI 기반 영어 회화 플랫폼으로 과업 중심 말하기 수업을 운영했다.',tools:['자체 AI 영어회화 플랫폼','Padlet','블루킷'],subject:'영어'},
+  {cat:'vibecoding',school:'원묵중학교',level:'중등',title:'역사 팟캐스트 수행평가와 바이브 코딩 학급 대시보드',summary:'바이브 코딩으로 평가 웹앱과 2학년 학급 대시보드를 직접 개발해 전자칠판과 연동했다.',tools:['NotebookLM','스쿨플랫','바이브 코딩 웹앱'],subject:'역사, 수학'},
+  {cat:'vibecoding',school:'송례중학교',level:'중등',title:'교사 자체 개발 AI 식단 평가 프로그램과 STAR 교사단·학생단',summary:'가정과에서 식단을 입력하면 영양소 적정성을 시각화하는 자체 AI 프로그램을 만들고, 학생 동아리가 바이브 코딩으로 퀴즈 앱을 만들었다.',tools:['교사 개발 AI 프로그램','바이브 코딩'],subject:'가정'},
+  {cat:'vibecoding',school:'한양대학교사범대학부속중학교',level:'중등',title:'바이브코딩으로 교사가 직접 만든 수업 웹앱',summary:'코딩 없이 AI에 명령하는 바이브코딩으로 과학 실험 데이터 시각화 웹앱과 AI 윤리 딜레마 모의법정 투표 웹앱을 제작했다.',tools:['바이브코딩','Suno','Padlet'],subject:'과학, 사회'},
+  {cat:'vibecoding',school:'월곡중학교',level:'중등',title:'클로드 바이브 코딩으로 만든 국어 수업 웹앱과 AI·디지털 교육 주간',summary:'클로드와의 바이브 코딩으로 국어 개요 짜기·글쓰기용 웹앱을 직접 제작해 모둠별 활동에 활용했다.',tools:['클로드','바이브 코딩','캔바'],subject:'국어'},
+  {cat:'vibecoding',school:'영란여자중학교',level:'중등',title:'바이브코딩 체육 경기 운영 앱과 학급 관계 분석 "관계나침반"',summary:'학년별 종목에 맞춘 체육 수행평가 앱과, 설문 기반 또래관계 분석 앱을 바이브코딩으로 개발했다.',tools:['바이브코딩 자체 앱','ChatGPT','제미나이'],subject:'체육'},
+  {cat:'vibecoding',school:'한성과학고등학교',level:'고등',title:'클로드 코드로 구축한 알고리즘 온라인저지와 AI 서술형 연습',summary:'깃허브 오픈소스와 클로드 코드를 활용해 자체 알고리즘 온라인저지 사이트를 구축하고 세특 작성에 활용했다.',tools:['클로드 코드','깃허브','Apps Script'],subject:'정보과학'},
+  {cat:'vibecoding',school:'서울발산초등학교',level:'초등',title:'자체 개발 "문해력 탐정"과 GAS 학급관리 자동화',summary:'코스웨어 데이터를 바탕으로 "문해력 탐정 V3.1"을 자체 개발해 수준별 리터러시 교육을 실천했다.',tools:['문해력 탐정(자체 개발)','Canva','Google Apps Script'],subject:'국어'},
+  {cat:'vibecoding',school:'신목중학교',level:'중등',title:'구글 GEMS·바이브 코딩 기반 토의 수업과 데이터 기반 자기 성찰',summary:'구글 GEMS와 바이브 코딩으로 토의 질문 발제와 논증에 맞춤형 피드백을 제공하는 프로그램을 제작했다.',tools:['구글 GEMS','바이브 코딩'],subject:'국어'},
+  {cat:'vibecoding',school:'화계중학교',level:'중등',title:'제미나이 웹퀴즈와 바이브코딩 생기부 도우미 웹앱 개발',summary:'과학 복습 게임형 웹퀴즈를 개발하고, 생기부 작성 도움 AI 웹앱을 동료 교사들과 나누었다.',tools:['제미나이','노션','바이브코딩'],subject:'과학'},
+  {cat:'vibecoding',school:'서울은명초등학교',level:'초등',title:'특수학급 바이브코딩 맞춤 앱과 클래스툴 활용 확산',summary:'특수학급 교사가 바이브코딩으로 학생별 맞춤형 수업 앱을 제작해 흥미와 참여를 높였다.',tools:['바이브코딩','패들렛','클래스툴'],subject:'특수교육'},
+  {cat:'vibecoding',school:'대청중학교',level:'중등',title:'전 교과 확산형 AI·에듀테크 수업과 클로드 바이브코딩 온라인 전시관',summary:'클로드 AI 바이브 코딩으로 국제문화나눔주간 온라인 전시관 웹앱을 제작·배포(Netlify)했다.',tools:['클로드','패들렛','클리포','Netlify'],subject:'전 교과'},
+  {cat:'vibecoding',school:'서울언북초등학교',level:'초등',title:'E-GPT 교육용 챗봇 제작과 AI 코스웨어·정서 대시보드 결합',summary:'교사가 E-GPT로 교과별 챗봇을 직접 제작해 글쓰기·역사 탐구에 활용하고, 동료와 수정·공유했다.',tools:['E-GPT','풀리수학','Snorkl','심스페이스'],subject:'수학, 국어'},
+
+  // Cat 4: AI 평가·피드백 혁신
+  {cat:'feedback',school:'용강중학교',level:'중등',title:'AI 초벌채점과 데이터 기반 피드백으로 만드는 수업·평가 혁신',summary:'Clipo AI로 서·논술형 답안 초벌 채점을 받아 교사는 최종 판단과 피드백에 집중하고, 280여 명 전원에게 근거 있는 평가를 제공하며 주말 채점이 사라졌다.',tools:['Clipo AI','Brisk','구글 폼 잠금모드'],subject:'평가/피드백'},
+  {cat:'feedback',school:'방배중학교',level:'중등',title:'Mizou·QuillBot을 활용한 영어 글쓰기 역동적 평가',summary:'Mizou가 단계별 피드백하고 QuillBot으로 문법·어휘를 최종 점검하게 하여, 피드백을 받아 수정하는 과정까지 평가하는 역동적 평가를 운영했다.',tools:['Mizou','QuillBot','채움AI'],subject:'영어'},
+  {cat:'feedback',school:'원촌중학교',level:'중등',title:'수학 듣기·말하기·쓰기 AI 연계 과정중심평가와 SEL 웹앱',summary:'Typecast 듣기, Snorkl 말하기, 채움AI 쓰기를 연계해 수학적 사고 과정을 과정 중심으로 평가했다.',tools:['Typecast','Snorkl','채움AI','바이브 코딩 웹앱'],subject:'수학'},
+  {cat:'feedback',school:'서울경인초등학교',level:'초등',title:'퍼스널 피드백 중심 교수·학습과정안과 AI 윤리 모의재판',summary:'평가적→조언형→코칭형으로 이어지는 5단계 피드백 체계를 2~6학년 수업에 적용했다.',tools:['와우아이디어스','패들렛','AI마타수학'],subject:'전 교과'},
+  {cat:'feedback',school:'증산중학교',level:'중등',title:'브리스크 티칭 AI 피드백 기반 영어 글쓰기와 하이브리드 쓰기 공동체',summary:'브리스크 티칭 AI 맞춤 피드백을 비판적으로 검토·반영하고, PQS 동료 피드백과 성찰 일지로 메타인지를 기르는 수업을 운영했다.',tools:['브리스크 티칭','패들렛','NotebookLM'],subject:'영어'},
+  {cat:'feedback',school:'종암중학교',level:'중등',title:'교사 제한형 생성형 AI 수업, AI 서논술형 평가, AI 마음일기',summary:'클래스팅 AI 샌드박스로 통제된 AI 수업을 운영하고, 채움AI로 서논술형 평가를 실시해 AI·교사 채점을 비교했다.',tools:['클래스팅 AI','채움AI','AI 마음일기'],subject:'과학, 수학'},
+  {cat:'feedback',school:'덕성여자중학교',level:'중등',title:'친환경 주택·AI 라디오 프로젝트와 클로드 스킬 기반 학습지 설계',summary:'클로드의 스킬 기능에 성취수준·평가 목표를 매뉴얼화해 학습지를 공동 설계하고, 클리포로 서논형·그래프·수식까지 AI 채점했다.',tools:['클로드(스킬)','클리포','VLLO','캔바'],subject:'기술, 국어'},
+  {cat:'feedback',school:'서울정덕초등학교',level:'초등',title:'ZEP 방탈출 디지털 성범죄 예방과 자작자작 다층 글쓰기 피드백',summary:'"자작자작" 플랫폼에서 AI 피드백과 교사·동료 피드백을 연계한 다층적 글쓰기 평가를 실시했다.',tools:['ZEP','자작자작','캔바','띵커벨'],subject:'도덕, 국어'},
+  {cat:'feedback',school:'염광고등학교',level:'고등',title:'아두이노 AI 헬스케어 프로젝트와 Snorkl 글쓰기 피드백',summary:'Snorkl AI로 150여 명이 1차 피드백을 받아 1인 교사의 개별 지도를 가능케 했다.',tools:['Snorkl','아두이노','NotebookLM'],subject:'정보'},
+  {cat:'feedback',school:'선정중학교',level:'중등',title:'센스쿨 과정중심평가와 심스페이스 데이터 기반 상담',summary:'센스쿨로 학생 학습 과정을 실시간 확인하고 맞춤형 피드백을 제공하며, 심스페이스로 데이터 기반 상담을 실시했다.',tools:['센스쿨','심스페이스'],subject:'범교과'},
+
+  // Cat 5: 데이터 기반 학급운영·상담
+  {cat:'sel',school:'운현초등학교',level:'초등',title:'실생활 곱셈 프로젝트와 심스페이스 데이터 기반 상담',summary:'3~6학년은 심스페이스로 감정·심리를 꾸준히 확인하고 데이터 기반 개인 상담을 진행했다.',tools:['아트봉봉','센스쿨','심스페이스'],subject:'수학'},
+  {cat:'sel',school:'건국대학교사범대학부속중학교',level:'중등',title:'ZEP 방탈출·클래스팅 AI 라이팅과 "우리반" 교우관계 분석',summary:'AI 기반 "우리반"으로 월 1회 교우관계를 진단해 위기학생을 선제 파악하고 학급 갈등을 최소화했다.',tools:['ZEP','클래스팅AI','우리반'],subject:'국어, 과학'},
+  {cat:'sel',school:'상일여자고등학교',level:'고등',title:'생성형 AI 과학 마술 탐구와 JTCI 데이터 기반 맞춤 진로 상담',summary:'JTCI 기질·성격 검사 데이터를 AI와 교차 분석해 30명 학생의 개별 맞춤 진로 상담을 실현했다.',tools:['Claude','JTCI 검사','Padlet'],subject:'과학, 진로'},
+  {cat:'sel',school:'동국대학교사범대학부속가람중학교',level:'중등',title:'생성형 AI 학교 생태지도·꽃말 감사카드와 3주체 리터러시 교육',summary:'구글 렌즈와 생성형 AI로 교내 식물을 탐색해 학교 생태지도를 만들고, 꽃말 감사카드를 제작·전달했다.',tools:['구글 렌즈','생성형 AI','캔바'],subject:'과학'},
+
+  // Cat 6: 디지털 리터러시·AI 윤리
+  {cat:'literacy',school:'한영중학교',level:'중등',title:'AI 사전진단 기반 맞춤 학습과 3!3!3! 디지털 실천 제스처',summary:'"3!3!3! 디지털 실천 제스처"로 학생 주도의 건강한 디벗 사용 문화를 만들었다.',tools:['구글 워크스페이스','디지털배지','클래스카드'],subject:'전 교과'},
+  {cat:'literacy',school:'서울동구로초등학교',level:'초등',title:'가짜뉴스·저작권·바이브코딩으로 배우는 디지털 리터러시',summary:'가짜뉴스 신뢰성 판단 기준 토의, 출처를 밝힌 인용 글쓰기 등 허위정보·저작권 교육을 진행했다.',tools:['디벗','바이브코딩'],subject:'국어'},
+  {cat:'literacy',school:'서울동일초등학교',level:'초등',title:'학년별 AI·디지털 수업과 피지컬 컴퓨팅·윤리 교육',summary:'미조우 활용 AI 윤리 토론, 디지털 리터러시 수업, 레고 스파이크 로봇 프로젝트를 폭넓게 전개했다.',tools:['바이브코딩','캔바','미조우','레고 스파이크'],subject:'사회, 과학'},
+  {cat:'literacy',school:'서울장위초등학교',level:'초등',title:'AI 형성평가 기반 영어 수업과 미디어 리터러시 프로젝트',summary:'6학년은 감염병 허위정보를 판별하고 카드뉴스를 제작해 패들렛에 공유하는 미디어 리터러시 프로젝트를 수행했다.',tools:['토도한글','패들렛','안티그래비티'],subject:'영어'},
+
+  // Cat 7: 학교 업무 자동화
+  {cat:'automation',school:'염광중학교',level:'중등',title:'생성형 AI 팝업 연수와 마이클AI 업무 간소화',summary:'마이클AI로 가정통신문 작성을 자동화하고, 월별 팝업 연수로 교원의 디지털 수업·평가 전문성을 높였다.',tools:['마이클AI','Gemini','Claude'],subject:'영어, 사회'},
+  {cat:'automation',school:'오류중학교',level:'중등',title:'시간표 자동 작성 프로그램 개발과 디지털 수업 공동연구',summary:'복잡한 제약 조건의 시간표 업무를 해결하기 위해 시간표 제작 프로그램을 직접 만들어 시범 운영했다.',tools:['자체 시간표 프로그램'],subject:'교무'},
+  {cat:'automation',school:'성심여자고등학교',level:'고등',title:'노트북LM 기후 빅데이터 분석과 구글 기반 온라인교무실',summary:'구글 도구 기반 온라인교무실 플랫폼을 구축해 업무 협업·인수인계 효율을 높였다.',tools:['NotebookLM','구글 워크스페이스'],subject:'과학, 업무경감'},
+  {cat:'automation',school:'한강중학교',level:'중등',title:'전 교과 AI 협업 프로젝트와 한강중 온라인 교무실',summary:'구글 드라이브 기반 온라인 교무실과 업무 질문·매뉴얼 챗봇 "한강 가-히"를 구축했다.',tools:['구글 드라이브','구글 LLM','SEN스쿨'],subject:'전 교과'},
+  {cat:'automation',school:'서울덕의초등학교',level:'초등',title:'찾아가는 AI 연수와 구글 시트 기반 종이 없는 스마트 업무',summary:'구글 시트 기반 종이 없는 스마트 업무 시스템으로 교사 업무 부담을 줄였다.',tools:['왓퀴즈','패들렛','구글 시트','ZEP'],subject:'실과'},
+
+  // Cat 8: 프로젝트·융합 수업
+  {cat:'project',school:'서울삼일초등학교',level:'초등',title:'학교 데이터 기반 생태전환 교육과 학생 AI 챗봇 제작',summary:'급식실 음식물 처리량, AIoT 교실 온도, 전기 사용량을 AI로 분석·시각화하고 학생 주도의 생태전환 실천으로 이어갔다.',tools:['생성형 AI','AIoT 센서','햄스터 로봇'],subject:'생태전환, SW'},
+  {cat:'project',school:'선린인터넷고등학교',level:'고등',title:'로봇을 움직이는 바이브 코딩과 AI 학습 에이전트 연수',summary:'학생들이 소형 로봇의 동작을 기획하고 AI로 제어 코드를 작성하는 "로봇 바이브 코딩" 수업을 운영했다.',tools:['바이브코딩','소형 로봇','노션'],subject:'정보'},
+  {cat:'project',school:'영등포공업고등학교',level:'고등',title:'노코딩 빅데이터 분석과 AICE 자격 연계 융합 수업',summary:'노코딩 AI 툴로 데이터 시각화와 AI 모델링을 체험하고 AICE 자격 과정과 연계했다.',tools:['노코딩 AI 툴','AICE','스쿨플랫'],subject:'수학, AI'},
+  {cat:'project',school:'서울아이티고등학교',level:'고등',title:'"Health Hero" 영어 4컷 만화 — 애니메이션과 전공 융합 프로젝트',summary:'카훗→제미나이(영작)→이미지AI→클립스튜디오→패들렛으로 이어지는 3차시 융합 프로젝트를 운영했다.',tools:['Kahoot','Gemini','Clip Studio Paint'],subject:'영어'},
+  {cat:'project',school:'서서울생활과학고등학교',level:'고등',title:'생성형 AI 융합 — 영어 사업계획서 PBL·AI 헤어스타일링·역사 창작곡',summary:'영어 PBL, 미용 AI 얼굴형 분석·스마트미러, 바이브코딩 웹앱, Suno 역사 창작곡까지 다양한 융합 프로젝트를 운영했다.',tools:['ChatGPT','Gemini','Suno','GitHub'],subject:'영어, 미용, 한국사'},
+  {cat:'project',school:'수명중학교',level:'중등',title:'에듀테크 협력학습과 AI 해커톤 융합 프로젝트 기반 조성',summary:'바이브코딩·노션 연수를 수업에 연결하고, AI 해커톤·STEAM 융합 프로젝트를 기획했다.',tools:['패들렛','노션','바이브코딩','과학 센서'],subject:'정보, 과학'},
+  {cat:'project',school:'숭미초등학교',level:'초등',title:'핵심아이디어 탐구수업과 하이테크·하이터치 상호작용 설계',summary:'통그라미로 전교생 설문을 수집·해석하고 결과를 실제 기업에 보내는 "삶을 바꾸는 수학"을 실현했다.',tools:['통그라미','Suno','E-GPT','투닝'],subject:'수학'},
+  {cat:'project',school:'서울백운초등학교',level:'초등',title:'투닝 AI로 "미래의 나" 디자인하는 진로 흥미 유발 활동',summary:'투닝의 AI 캐릭터 생성으로 "미래의 나의 모습"을 작품으로 만드는 진로 흥미 유발 활동을 운영했다.',tools:['투닝'],subject:'진로'},
+  {cat:'project',school:'경희여자중학교',level:'중등',title:'MS 도구 기반 학습 포트폴리오와 디지털 과학 독서 전환',summary:'OneNote 학습 포트폴리오로 수준별 피드백을 제공하고, d라이브러리로 디지털 과학 독서를 전환했다.',tools:['MS OneNote','MS Teams','AlgeoMath'],subject:'과학, 수학'},
+  {cat:'project',school:'영파여자중학교',level:'중등',title:'매쓰-쿼리 개별화 수학과 스마트 줄넘기 데이터 체육, 바이브코딩 크리에이터',summary:'스마트 줄넘기 대시보드로 학생별 운동 데이터를 누적해 1:1 밀착 코칭을 했다.',tools:['포커스팡','풀리수학','스마트 줄넘기','바이브코딩'],subject:'수학, 체육'},
+
+  // Cat 9: 학교 단위 확산·교원학습공동체
+  {cat:'school',school:'서울서강초등학교',level:'초등',title:'3~6학년 29개 학급 전면의 AI·디지털 수업 연구와 나눔',summary:'3~6학년 29개 학급 전체에서 AI·디지털 도구 활용 수업 사례를 연구·나눔하고, 학년별 ACE 실천팀과 교원학습공동체로 모델을 공동 개발했다.',tools:['Padlet','ZEP','알지오매스키즈'],subject:'전 교과'},
+  {cat:'school',school:'서울홍신고등학교',level:'고등',title:'수업 나눔 주간과 실천 중심 AI 도구 전폭 지원',summary:'전 교원이 참여하는 수업 나눔 주간을 운영하고, Google Pro, ChatGPT, Claude 등 AI 도구를 예산으로 전폭 지원했다.',tools:['패들렛','리로스쿨','ChatGPT','Claude'],subject:'간호, 영어'},
+  {cat:'school',school:'서울명덕초등학교',level:'초등',title:'시즌별 공모전과 학생 맞춤형 프로젝트 수업 중심 선도학교 운영',summary:'시즌별 학생 공모전과 사례나눔 주간 운영으로 저·고학년 맞춤 사례를 전교에 확산했다.',tools:['패들렛','메타버스'],subject:'프로젝트 학습'},
+  {cat:'school',school:'서울대명초등학교',level:'초등',title:'대명DAEUM: 학년별 에듀테크 구독과 데이터 기반 상담·수업나눔',summary:'학년별 수요를 반영한 에듀테크를 구독하고, 서울시교육청 관내학교 대상 수업나눔을 실시했다.',tools:['패들렛','클래시파이','캔바','ChatGPT'],subject:'전 교과'},
+  {cat:'school',school:'서울인공지능고등학교',level:'고등',title:'학과별 교원학습공동체 기반 AI 융합수업과 선도교원 양성',summary:'학과별 교원학습공동체가 생성형 AI 연수를 공동 이수하고 AI 캐릭터·ZEP 퀴즈·Streamlit 수업을 운영했다.',tools:['ZEP','Github','Streamlit','MS Teams'],subject:'전문교과(AI)'},
+  {cat:'school',school:'서울구암초등학교',level:'초등',title:'1~6학년 학년별 AI·디지털 기본소양 교육과정과 코딩 로봇 프로젝트',summary:'1학년 컴퓨터 기초부터 6학년 AI 코딩 로봇까지 학년별로 체계화된 교육과정을 운영했다.',tools:['엔트리','햄스터봇','오조봇','제미나이'],subject:'정보'},
+  {cat:'school',school:'서울양명초등학교',level:'초등',title:'학년군별 엔트리 코딩 수업과 디지털 기반 학교 운영 체계 구축',summary:'학년군별 엔트리 코딩 수업과 설문·자료 제출 창구 일원화, 수업 자료 아카이브를 구축했다.',tools:['엔트리','아이패드','디지털 포트폴리오'],subject:'코딩'},
+  {cat:'school',school:'성동초등학교',level:'초등',title:'구글 워크스페이스와 Apple ADS 기반 미래형 학습환경 구축',summary:'구글 워크스페이스와 Apple ADS 프로그램 기반의 iOS 디지털 학습환경을 구축했다.',tools:['구글 워크스페이스','Apple ADS'],subject:'전 교과'},
+  {cat:'school',school:'동국대학교사범대학부속중학교',level:'중등',title:'범교과 창체 에듀테크 연수와 이중 트랙 교원학습공동체',summary:'전체 교사 대상과 희망자 대상 이중 트랙 공동체를 운영해 AI·에듀테크 노하우를 공유했다.',tools:['에듀테크'],subject:'창체'},
+  {cat:'school',school:'구암중학교(서울)',level:'중등',title:'북크리에이터·SEN스쿨 융합 수업과 교원학습공동체 확산',summary:'북크리에이터와 SEN스쿨 아트봉봉스쿨로 포용적 수업·평가를 운영하고 월례 교원학습공동체로 확산했다.',tools:['북크리에이터','SEN스쿨','NotebookLM'],subject:'전 교과'},
+  {cat:'school',school:'대원고등학교',level:'고등',title:'AI·디지털 기반 맞춤형 수업 공개와 협력학습 운영',summary:'디지털 기기 활용 맞춤형 수업과 모둠 협력학습으로 AI를 문제 해결 도구로 인식하는 태도를 길렀다.',tools:['디지털 기기','AI 학습 도구'],subject:'범교과'},
+  {cat:'school',school:'서울창일초등학교',level:'초등',title:'AI·디지털 도구를 활용한 학생 참여형 수업 운영',summary:'클로드 Pro, GPT Plus 등 18종의 에듀테크를 구독해 다양한 수업에 적용했다.',tools:['클로드','ChatGPT','블루킷','클리포','Suno'],subject:'범교과'},
+
+  // Cat 10: 특수교육·포용
+  {cat:'inclusive',school:'해성국제컨벤션고등학교',level:'고등',title:'특성화고 에듀테크 맞춤학습과 AI 기반 다문화 학생 지원',summary:'Tikita 동시통역과 AI 챗봇 다문화 퀴즈 대회로 다문화 학생의 언어 장벽을 완화하는 포용적 교육을 실현했다.',tools:['Tikita','Canva','클리포'],subject:'전문교과'},
+  {cat:'inclusive',school:'우촌초등학교',level:'초등',title:'디벗·패들렛 참여형 수업과 매쓰홀릭 기반 평가 협력',summary:'디벗과 패들렛으로 모든 학생이 참여하는 수업과 매쓰홀릭 공동 평가 문항 제작 문화를 조성했다.',tools:['디벗','패들렛','매쓰홀릭'],subject:'사회, 수학'}
+];
+
+// ---- Normalize tool names for counting ----
+function normTool(t) {
+  t = t.trim();
+  const map = {
+    'Padlet':'패들렛','padlet':'패들렛',
+    'Canva':'캔바','canva':'캔바','캔바 AI':'캔바',
+    'ChatGPT':'ChatGPT','chatgpt':'ChatGPT',
+    'Claude':'Claude','클로드':'Claude','클로드(스킬)':'Claude','클로드 코드':'Claude',
+    'Gemini':'Gemini','제미나이':'Gemini','Gemini Gems':'Gemini',
+    'NotebookLM':'NotebookLM','노트북LM':'NotebookLM',
+    'ZEP':'ZEP','젭퀴즈':'ZEP',
+    'Brisk':'Brisk Teaching','브리스크 티칭':'Brisk Teaching','Brisk Teaching':'Brisk Teaching',
+    'Clipo AI':'클리포','클리포':'클리포',
+    'Snorkl':'Snorkl',
+    'Mizou':'Mizou','미조우':'Mizou',
+    'Suno':'Suno',
+    '바이브코딩':'바이브코딩','바이브 코딩':'바이브코딩','바이브코딩 자체 앱':'바이브코딩','바이브 코딩 웹앱':'바이브코딩',
+    '심스페이스':'심스페이스',
+    '매쓰홀릭':'매쓰홀릭',
+    '패들렛':'패들렛',
+    '캔바':'캔바',
+    '클래스카드':'클래스카드',
+    '클래스팅AI':'클래스팅','클래스팅':'클래스팅','클래스팅 AI':'클래스팅',
+    '채움AI':'채움AI',
+    '스쿨플랫':'스쿨플랫',
+    '띵커벨':'띵커벨','띵커벨 보드':'띵커벨',
+    '풀리수학':'풀리수학','풀리':'풀리수학',
+    '똑똑수학탐험대':'똑똑수학탐험대',
+    '센스쿨':'센스쿨','SEN스쿨':'센스쿨',
+    '투닝':'투닝','Tooning AI':'투닝',
+    '블루킷':'블루킷',
+    '구글 클래스룸':'구글 워크스페이스','구글 워크스페이스':'구글 워크스페이스','구글사이트':'구글 워크스페이스','구글 드라이브':'구글 워크스페이스','구글 시트':'구글 워크스페이스',
+    'E-GPT':'E-GPT',
+    '디벗':'디벗',
+    '러니':'러니',
+    '원아워':'원아워',
+    '아두이노':'아두이노',
+    '뤼튼':'뤼튼',
+    '노션':'노션',
+    '엔트리':'엔트리',
+    '토도한글':'토도한글','토도한글·수학·영어':'토도한글',
+    'MS Teams':'MS Teams','MS OneNote':'MS Teams',
+    '왓퀴즈':'왓퀴즈',
+    '아트봉봉':'아트봉봉',
+    '북크리에이터':'북크리에이터',
+  };
+  return map[t] || t;
+}
+
+function buildDashboard() {
+  const visible = CASES.filter(c => !c.hidden);
+
+  // 1. Tool frequency
+  const toolCount = {};
+  visible.forEach(c => c.tools.forEach(t => {
+    const n = normTool(t);
+    toolCount[n] = (toolCount[n] || 0) + 1;
+  }));
+  const toolRank = Object.entries(toolCount).sort((a,b) => b[1]-a[1]);
+  const uniqueTools = toolRank.length;
+  document.getElementById('tool-count').textContent = uniqueTools;
+
+  // 2. AI tool categories
+  const aiGenTools = ['ChatGPT','Claude','Gemini','뤼튼','E-GPT','Mizou','생성형 AI','AI 질문 챗봇','AI 챗봇','Elice AI','아이쌤GPT','마이클AI'];
+  const aiCourseTools = ['스쿨플랫','매쓰홀릭','풀리수학','러니','원아워','클래스팅','클래스카드','AI 코스웨어','수학 AI 코스웨어','리딩오션스쿨','리드포스쿨','AI 아크수학','수학 아레나','체리팟','똑똑수학탐험대','토도한글'];
+  const aiFeedbackTools = ['클리포','Brisk Teaching','채움AI','Snorkl','센스쿨'];
+  const vibecodeTools = ['바이브코딩'];
+  const collab = ['패들렛','캔바','ZEP','블루킷','투닝','띵커벨','멘티미터','Padlet','노션','구글 워크스페이스','MS Teams','왓퀴즈','북크리에이터','Suno'];
+
+  let genCount = 0, courseCount = 0, fbCount = 0, vibeCount = 0, collabCount = 0;
+  toolRank.forEach(([name, cnt]) => {
+    if (aiGenTools.includes(name)) genCount += cnt;
+    else if (aiCourseTools.includes(name)) courseCount += cnt;
+    else if (aiFeedbackTools.includes(name)) fbCount += cnt;
+    else if (vibecodeTools.includes(name)) vibeCount += cnt;
+    else if (collab.includes(name)) collabCount += cnt;
+  });
+
+  // 3. Subject frequency
+  const subjectCount = {};
+  const subjectMap = {
+    '수학':0,'영어':0,'과학':0,'국어':0,'정보':0,'사회':0,'도덕':0,
+    '기술':0,'체육':0,'역사':0,'미술':0,'음악':0,'진로':0
+  };
+  visible.forEach(c => {
+    const s = c.subject || '';
+    Object.keys(subjectMap).forEach(k => {
+      if (s.includes(k)) subjectMap[k]++;
+    });
+  });
+  const subjectRank = Object.entries(subjectMap).filter(e=>e[1]>0).sort((a,b)=>b[1]-a[1]);
+
+  // 4. Level distribution
+  const levelCount = {초등:0,중등:0,고등:0};
+  visible.forEach(c => { levelCount[c.level]++; });
+
+  // 5. Category by level
+  const catLevel = {};
+  CATEGORIES.forEach(cat => {
+    catLevel[cat.id] = {초등:0,중등:0,고등:0};
+    visible.filter(c=>c.cat===cat.id).forEach(c => catLevel[cat.id][c.level]++);
+  });
+
+  const barColors = ['var(--cat1)','var(--cat2)','var(--cat3)','var(--cat4)','var(--cat5)','var(--cat6)','var(--cat7)','var(--cat8)','var(--cat9)','var(--cat10)','var(--accent)','var(--cat1)','var(--cat2)','var(--cat3)','var(--cat4)'];
+
+  function renderBars(data, max, limit) {
+    return data.slice(0, limit || 15).map(([name, cnt], i) =>
+      `<div class="bar-row">
+        <span class="bar-label" title="${name}">${name}</span>
+        <div class="bar-track"><div class="bar-fill" style="width:${(cnt/max*100).toFixed(1)}%;background:${barColors[i % barColors.length]}"></div></div>
+        <span class="bar-value">${cnt}</span>
+      </div>`
+    ).join('');
+  }
+
+  // Donut SVG
+  function donutSVG(segments, total) {
+    const colors = ['var(--cat1)','var(--cat3)','var(--cat4)','var(--cat2)','var(--cat8)'];
+    let offset = 0;
+    const radius = 52, cx = 70, cy = 70, circumference = 2 * Math.PI * radius;
+    let paths = '';
+    segments.forEach((seg, i) => {
+      const pct = seg.value / total;
+      const dashLen = circumference * pct;
+      const dashGap = circumference - dashLen;
+      paths += `<circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="${colors[i]}" stroke-width="16" stroke-dasharray="${dashLen} ${dashGap}" stroke-dashoffset="${-offset}" stroke-linecap="butt" />`;
+      offset += dashLen;
+    });
+    return `<svg viewBox="0 0 140 140" xmlns="http://www.w3.org/2000/svg" style="transform:rotate(-90deg)">
+      <circle cx="${cx}" cy="${cy}" r="${radius}" fill="none" stroke="var(--surface-alt)" stroke-width="16"/>
+      ${paths}
+    </svg>`;
+  }
+
+  const aiSegments = [
+    {label:'생성형 AI (ChatGPT, Claude, Gemini 등)',value:genCount},
+    {label:'AI 코스웨어 (스쿨플랫, 매쓰홀릭 등)',value:courseCount},
+    {label:'AI 평가 (클리포, 채움AI 등)',value:fbCount},
+    {label:'바이브코딩 도구',value:vibeCount},
+    {label:'협업·발표 도구 (패들렛, 캔바 등)',value:collabCount}
+  ];
+  const aiTotal = aiSegments.reduce((s,x)=>s+x.value,0);
+  const donutColors = ['var(--cat1)','var(--cat3)','var(--cat4)','var(--cat2)','var(--cat8)'];
+
+  // Category sizes for budget focus
+  const catSizes = CATEGORIES.map(cat => ({
+    title: cat.title,
+    icon: cat.icon,
+    count: visible.filter(c=>c.cat===cat.id).length,
+    color: cat.color
+  })).sort((a,b)=>b.count-a.count);
+  const maxCat = catSizes[0].count;
+
+  const container = document.getElementById('dashboardContainer');
+  container.innerHTML = `
+    <div class="dash-grid">
+      <div class="dash-card">
+        <h3><span>🏆</span> 도구 활용 빈도 TOP 15</h3>
+        ${renderBars(toolRank, toolRank[0][1], 15)}
+      </div>
+      <div class="dash-card">
+        <h3><span>🤖</span> AI 도구 유형별 활용 비중</h3>
+        <div class="donut-row">
+          <div class="donut-container">${donutSVG(aiSegments, aiTotal)}</div>
+          <div class="donut-legend">
+            ${aiSegments.map((seg,i) => `<div class="legend-item"><span class="legend-dot" style="background:${donutColors[i]}"></span>${seg.label}<span class="legend-count">${seg.value}회</span></div>`).join('')}
+          </div>
+        </div>
+        <div class="insight-box"><p><strong>생성형 AI</strong>가 가장 많이 활용되었고, 이어 <strong>AI 코스웨어</strong>(맞춤형 수학 학습)와 <strong>협업·발표 도구</strong>가 뒤를 이었습니다. <strong>바이브코딩</strong>은 올해 새롭게 부상한 트렌드입니다.</p></div>
+      </div>
+      <div class="dash-card">
+        <h3><span>📚</span> 교과별 연구 집중도</h3>
+        ${renderBars(subjectRank, subjectRank[0][1], 13)}
+        <div class="insight-box"><p><strong>수학</strong>이 압도적으로 많으며, AI 코스웨어의 진단·맞춤학습 기능이 수학 교과에 가장 잘 맞기 때문입니다. <strong>영어·과학·국어</strong>가 뒤를 잇고, <strong>정보·사회</strong>에서도 활발합니다.</p></div>
+      </div>
+      <div class="dash-card">
+        <h3><span>💰</span> 예산·관심 집중 영역 (유목별 사례 수)</h3>
+        ${catSizes.map(cs => `<div class="bar-row">
+          <span class="bar-label" title="${cs.title}">${cs.icon} ${cs.title.length > 12 ? cs.title.slice(0,12)+'…' : cs.title}</span>
+          <div class="bar-track"><div class="bar-fill" style="width:${(cs.count/maxCat*100).toFixed(1)}%;background:var(--cat${cs.color})"></div></div>
+          <span class="bar-value">${cs.count}</span>
+        </div>`).join('')}
+        <div class="insight-box"><p><strong>AI 코스웨어 맞춤학습</strong>과 <strong>생성형 AI 수업</strong>에 예산과 관심이 가장 집중되었습니다. <strong>바이브코딩</strong>은 별도 예산 없이 교사 역량으로 성장한 영역이며, <strong>학교 단위 확산</strong>에도 많은 학교가 투자했습니다.</p></div>
+      </div>
+      <div class="dash-card full">
+        <h3><span>🏫</span> 학교급별 분포</h3>
+        <div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:16px">
+          <div class="legend-item"><span class="legend-dot" style="background:var(--level-elem)"></span>초등 <span class="legend-count">${levelCount['초등']}교</span></div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--level-mid)"></span>중등 <span class="legend-count">${levelCount['중등']}교</span></div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--level-high)"></span>고등 <span class="legend-count">${levelCount['고등']}교</span></div>
+        </div>
+        <div style="overflow-x:auto">
+        ${CATEGORIES.map(cat => {
+          const d = catLevel[cat.id];
+          const total = d['초등']+d['중등']+d['고등'];
+          if(!total) return '';
+          return `<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+            <span class="bar-label" style="width:160px" title="${cat.title}">${cat.icon} ${cat.title.length > 14 ? cat.title.slice(0,14)+'…' : cat.title}</span>
+            <div class="bar-track" style="display:flex">
+              ${d['초등'] ? `<div style="width:${(d['초등']/total*100).toFixed(1)}%;height:100%;background:var(--level-elem);border-radius:4px 0 0 4px" title="초등 ${d['초등']}"></div>` : ''}
+              ${d['중등'] ? `<div style="width:${(d['중등']/total*100).toFixed(1)}%;height:100%;background:var(--level-mid)" title="중등 ${d['중등']}"></div>` : ''}
+              ${d['고등'] ? `<div style="width:${(d['고등']/total*100).toFixed(1)}%;height:100%;background:var(--level-high);border-radius:0 4px 4px 0" title="고등 ${d['고등']}"></div>` : ''}
+            </div>
+            <span class="bar-value">${total}</span>
+          </div>`;
+        }).join('')}
+        </div>
+        <div class="insight-box"><p><strong>초등학교</strong>가 전체의 절반 이상을 차지하며, AI 코스웨어(수학)와 바이브코딩 영역에서 특히 활발합니다. <strong>중학교</strong>는 평가·피드백 혁신과 바이브코딩에 강세를 보이고, <strong>고등학교</strong>는 프로젝트·융합 수업과 학교 단위 확산에 집중하는 경향이 있습니다.</p></div>
+      </div>
+    </div>
+  `;
+}
+
+function init() {
+  const container = document.getElementById('categoriesContainer');
+  const visible = CASES.filter(c => !c.hidden);
+  const readableCount = visible.filter(c => c.summary && !c.summary.includes('미제출')).length;
+  document.getElementById('readable-count').textContent = readableCount;
+
+  buildDashboard();
+
+  CATEGORIES.forEach(cat => {
+    const cases = visible.filter(c => c.cat === cat.id);
+    if (!cases.length) return;
+    const section = document.createElement('div');
+    section.className = 'category';
+    section.dataset.catId = cat.id;
+
+    section.innerHTML = `
+      <div class="cat-header" onclick="toggleCategory('${cat.id}')">
+        <div class="cat-icon" style="background:var(--cat${cat.color}-bg);color:var(--cat${cat.color})">${cat.icon}</div>
+        <span class="cat-title">${cat.title}</span>
+        <span class="cat-count">${cases.length}건</span>
+        <span class="cat-toggle" id="toggle-${cat.id}">▾</span>
+      </div>
+      <div class="cat-desc">${cat.desc}</div>
+      <div class="case-grid" id="grid-${cat.id}">
+        ${cases.map(c => renderCard(c, cat.color)).join('')}
+      </div>
+    `;
+    container.appendChild(section);
+  });
+
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
+
+  document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      document.getElementById('panel-' + btn.dataset.tab).classList.add('active');
+    });
+  });
+}
+
+function renderCard(c, color) {
+  const levelClass = c.level === '초등' ? 'elem' : c.level === '중등' ? 'mid' : 'high';
+  const toolsHtml = c.tools.slice(0, 4).map(t => `<span class="tool-tag">${t}</span>`).join('') +
+    (c.tools.length > 4 ? `<span class="tool-tag">+${c.tools.length - 4}</span>` : '');
+
+  return `<div class="case-card" data-level="${c.level}" data-search="${c.school} ${c.title} ${c.summary} ${c.tools.join(' ')} ${c.subject}">
+    <div class="card-top">
+      <span class="level-badge ${levelClass}">${c.level}</span>
+      <span class="card-school">${c.school}</span>
+    </div>
+    <div class="card-title">${c.title}</div>
+    <div class="card-summary">${c.summary}</div>
+    <button class="card-expand" onclick="this.previousElementSibling.classList.toggle('expanded');this.textContent=this.textContent==='더 보기'?'접기':'더 보기'">더 보기</button>
+    <div class="card-tools">${toolsHtml}</div>
+    <div class="card-subject">${c.subject}</div>
+  </div>`;
+}
+
+function toggleCategory(id) {
+  const grid = document.getElementById('grid-' + id);
+  const toggle = document.getElementById('toggle-' + id);
+  grid.classList.toggle('hidden');
+  toggle.classList.toggle('collapsed');
+}
+
+function applyFilters() {
+  const level = document.querySelector('.filter-btn.active').dataset.level;
+  const query = document.getElementById('searchInput').value.toLowerCase().trim();
+
+  document.querySelectorAll('.case-card').forEach(card => {
+    const matchLevel = level === 'all' || card.dataset.level === level;
+    const matchSearch = !query || card.dataset.search.toLowerCase().includes(query);
+    card.style.display = (matchLevel && matchSearch) ? '' : 'none';
+  });
+
+  document.querySelectorAll('.category').forEach(cat => {
+    const visibleCards = cat.querySelectorAll('.case-card:not([style*="display: none"])');
+    const countEl = cat.querySelector('.cat-count');
+    countEl.textContent = visibleCards.length + '건';
+    cat.style.display = visibleCards.length === 0 ? 'none' : '';
+  });
+}
+
+init();
+</script>
+</body>
+</html>
