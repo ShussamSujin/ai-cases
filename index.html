@@ -648,9 +648,9 @@ footer {
       <div class="filter-row">
         <span class="filter-label">학교급</span>
         <button class="filter-btn active" data-level="all">전체</button>
-        <button class="filter-btn" data-level="초등">초등</button>
-        <button class="filter-btn" data-level="중등">중등</button>
-        <button class="filter-btn" data-level="고등">고등</button>
+        <button class="filter-btn" data-level="초등">초</button>
+        <button class="filter-btn" data-level="중등">중</button>
+        <button class="filter-btn" data-level="고등">고</button>
         <input type="text" class="search-input" placeholder="학교명, 도구, 키워드 검색..." id="searchInput">
       </div>
       <div class="cat-tab-row" id="catTabRow"></div>
@@ -1030,9 +1030,9 @@ function buildDashboard() {
       <div class="dash-card full">
         <h3><span>🏫</span> 학교급별 분포</h3>
         <div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:16px">
-          <div class="legend-item"><span class="legend-dot" style="background:var(--level-elem)"></span>초등 <span class="legend-count">${levelCount['초등']}교</span></div>
-          <div class="legend-item"><span class="legend-dot" style="background:var(--level-mid)"></span>중등 <span class="legend-count">${levelCount['중등']}교</span></div>
-          <div class="legend-item"><span class="legend-dot" style="background:var(--level-high)"></span>고등 <span class="legend-count">${levelCount['고등']}교</span></div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--level-elem)"></span>초 <span class="legend-count">${levelCount['초등']}교</span></div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--level-mid)"></span>중 <span class="legend-count">${levelCount['중등']}교</span></div>
+          <div class="legend-item"><span class="legend-dot" style="background:var(--level-high)"></span>고 <span class="legend-count">${levelCount['고등']}교</span></div>
         </div>
         <div style="overflow-x:auto">
         ${CATEGORIES.map(cat => {
@@ -1042,9 +1042,9 @@ function buildDashboard() {
           return `<div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
             <span class="bar-label" style="width:160px" title="${cat.title}">${cat.icon} ${cat.title.length > 14 ? cat.title.slice(0,14)+'…' : cat.title}</span>
             <div class="bar-track" style="display:flex">
-              ${d['초등'] ? `<div style="width:${(d['초등']/total*100).toFixed(1)}%;height:100%;background:var(--level-elem);border-radius:4px 0 0 4px" title="초등 ${d['초등']}"></div>` : ''}
-              ${d['중등'] ? `<div style="width:${(d['중등']/total*100).toFixed(1)}%;height:100%;background:var(--level-mid)" title="중등 ${d['중등']}"></div>` : ''}
-              ${d['고등'] ? `<div style="width:${(d['고등']/total*100).toFixed(1)}%;height:100%;background:var(--level-high);border-radius:0 4px 4px 0" title="고등 ${d['고등']}"></div>` : ''}
+              ${d['초등'] ? `<div style="width:${(d['초등']/total*100).toFixed(1)}%;height:100%;background:var(--level-elem);border-radius:4px 0 0 4px" title="초 ${d['초등']}"></div>` : ''}
+              ${d['중등'] ? `<div style="width:${(d['중등']/total*100).toFixed(1)}%;height:100%;background:var(--level-mid)" title="중 ${d['중등']}"></div>` : ''}
+              ${d['고등'] ? `<div style="width:${(d['고등']/total*100).toFixed(1)}%;height:100%;background:var(--level-high);border-radius:0 4px 4px 0" title="고 ${d['고등']}"></div>` : ''}
             </div>
             <span class="bar-value">${total}</span>
           </div>`;
@@ -1132,12 +1132,13 @@ function init() {
 
 function renderCard(c, color) {
   const levelClass = c.level === '초등' ? 'elem' : c.level === '중등' ? 'mid' : 'high';
+  const levelShort = c.level === '초등' ? '초' : c.level === '중등' ? '중' : '고';
   const toolsHtml = c.tools.slice(0, 4).map(t => `<span class="tool-tag">${t}</span>`).join('') +
     (c.tools.length > 4 ? `<span class="tool-tag">+${c.tools.length - 4}</span>` : '');
 
   return `<div class="case-card" data-level="${c.level}" data-search="${c.school} ${c.title} ${c.summary} ${c.tools.join(' ')} ${c.subject}">
     <div class="card-top">
-      <span class="level-badge ${levelClass}">${c.level}</span>
+      <span class="level-badge ${levelClass}">${levelShort}</span>
       <span class="card-school">${c.school}</span>
     </div>
     <div class="card-title">${c.title}</div>
