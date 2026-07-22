@@ -420,6 +420,45 @@ header .subtitle-note {
 .search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-light); }
 .search-input::placeholder { color: var(--text-tertiary); }
 
+.cat-tab-row {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 2px;
+  margin-top: 10px;
+  scrollbar-width: thin;
+}
+
+.cat-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--surface);
+  color: var(--text-secondary);
+  font-size: 12.5px;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.15s;
+}
+
+.cat-tab-btn:hover { border-color: var(--accent); color: var(--text); }
+
+.cat-tab-btn.active {
+  background: var(--tab-color, var(--accent));
+  border-color: var(--tab-color, var(--accent));
+  color: #fff;
+}
+
+.cat-tab-count {
+  font-variant-numeric: tabular-nums;
+  opacity: 0.8;
+}
+
 /* CATEGORIES */
 .categories { padding: 28px 0 48px; }
 .category { margin-bottom: 36px; }
@@ -616,6 +655,7 @@ footer {
         <button class="filter-btn" data-level="고등">고등</button>
         <input type="text" class="search-input" placeholder="학교명, 도구, 키워드 검색..." id="searchInput">
       </div>
+      <div class="cat-tab-row" id="catTabRow"></div>
     </div>
   </div>
   <div class="categories container" id="categoriesContainer"></div>
@@ -1028,9 +1068,23 @@ function init() {
 
   buildDashboard();
 
+  const catTabRow = document.getElementById('catTabRow');
+  const allBtn = document.createElement('button');
+  allBtn.className = 'cat-tab-btn active';
+  allBtn.dataset.cat = 'all';
+  allBtn.innerHTML = `전체 <span class="cat-tab-count">${visible.length}</span>`;
+  catTabRow.appendChild(allBtn);
+
   CATEGORIES.forEach(cat => {
     const cases = visible.filter(c => c.cat === cat.id);
     if (!cases.length) return;
+    const tabBtn = document.createElement('button');
+    tabBtn.className = 'cat-tab-btn';
+    tabBtn.dataset.cat = cat.id;
+    tabBtn.style.setProperty('--tab-color', `var(--cat${cat.color})`);
+    tabBtn.innerHTML = `${cat.icon} ${cat.title} <span class="cat-tab-count">${cases.length}</span>`;
+    catTabRow.appendChild(tabBtn);
+
     const section = document.createElement('div');
     section.className = 'category';
     section.dataset.catId = cat.id;
@@ -1059,6 +1113,14 @@ function init() {
   });
 
   document.getElementById('searchInput').addEventListener('input', applyFilters);
+
+  document.querySelectorAll('.cat-tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.cat-tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
 
   document.querySelectorAll('.tab-btn').forEach(btn => {
     btn.addEventListener('click', () => {
@@ -1097,6 +1159,8 @@ function toggleCategory(id) {
 
 function applyFilters() {
   const level = document.querySelector('.filter-btn.active').dataset.level;
+  const activeCatBtn = document.querySelector('.cat-tab-btn.active');
+  const selectedCat = activeCatBtn ? activeCatBtn.dataset.cat : 'all';
   const query = document.getElementById('searchInput').value.toLowerCase().trim();
 
   document.querySelectorAll('.case-card').forEach(card => {
@@ -1106,10 +1170,18 @@ function applyFilters() {
   });
 
   document.querySelectorAll('.category').forEach(cat => {
+    const matchCat = selectedCat === 'all' || cat.dataset.catId === selectedCat;
     const visibleCards = cat.querySelectorAll('.case-card:not([style*="display: none"])');
     const countEl = cat.querySelector('.cat-count');
     countEl.textContent = visibleCards.length + '건';
-    cat.style.display = visibleCards.length === 0 ? 'none' : '';
+    cat.style.display = (visibleCards.length === 0 || !matchCat) ? 'none' : '';
+
+    if (matchCat && selectedCat !== 'all') {
+      const grid = cat.querySelector('.case-grid');
+      const toggle = cat.querySelector('.cat-toggle');
+      grid.classList.remove('hidden');
+      toggle.classList.remove('collapsed');
+    }
   });
 }
 
